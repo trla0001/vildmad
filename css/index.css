@@ -1,13 +1,30 @@
+/* side layout, grid */
 .grid_1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
+/* De to tekst sektioner */
 .pink_background {
   background-color: #edb3b9;
+  margin: 8% 10% 18% 10%;
+  padding: 5% 10% 5% 10%;
 }
 
 .purple_background {
   background-color: #9d87fb;
   color: #ffffff;
+  margin: 0 10% 0% 10%;
+  padding: 0% 10% 0% 10%;
 }
+
+/* iconer layout og styling */
+.season_icons {
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+  gap: 5px;
+  margin: 5%;
+}
+
+/* box shaddow til iconer */

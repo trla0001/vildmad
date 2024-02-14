@@ -18,7 +18,8 @@ main {
 h1 {
   font-family: "Love Ya Like A Sister", cursive;
   font-weight: 400;
-  font-size: 60px;
+  font-size: 35px;
+  padding-bottom: 8px;
 }
 
 h2 {
@@ -29,7 +30,7 @@ h2 {
 h3 {
   font-family: "Lemonada", cursive;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 20px;
 }
 h4 {
   font-family: "Montserrat", sans-serif;
@@ -39,7 +40,8 @@ h4 {
 h5 {
   font-family: "Lemonada", cursive;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 13px;
+  padding-bottom: 10px;
 }
 h6 {
   font-family: "Love Ya Like A Sister", cursive;
