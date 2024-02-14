@@ -8,6 +8,7 @@ img {
   height: auto;
   display: block;
 }
+
 footer {
   background-color: #7d8d66;
   color: aliceblue;
@@ -15,15 +16,10 @@ footer {
   height: auto;
   display: flex;
   padding: 20px;
+  flex-direction: row;
   justify-content: space-between;
 }
-.footer_title {
-  justify-content: left;
-  font-family: "Love Ya Like A Sister", cursive;
-  font-style: normal;
-  font-size: 40px;
-  padding-left: 10px;
-}
+
 .info {
   display: grid;
   line-height: 20px;
@@ -42,7 +38,46 @@ footer {
   padding-top: 15px;
   font-size: 20px;
 }
-.footer_logo {
-  display: flex;
-  width: 100px;
+.socialmedia {
+  padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    background-color: #7d8d66;
+    color: aliceblue;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+  }
+  .footer_title {
+    justify-content: left;
+    font-family: "Love Ya Like A Sister", cursive;
+    font-style: normal;
+    font-size: 40px;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+
+  .adress,
+  .telefon,
+  .email {
+    display: flex;
+    padding-top: 10px;
+  }
+  .socialmedia {
+    padding-top: 40px;
+    display: flex;
+  }
+
+  .footer_logo {
+    display: flex;
+    width: 100px;
+  }
 }
