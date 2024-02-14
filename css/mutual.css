@@ -14,10 +14,38 @@ img {
 h1 {
   font-family: "Love Ya Like A Sister", cursive;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 60px;
 }
 
 h2 {
+  font-family: "Love Ya Like A Sister", cursive;
+  font-weight: 400;
+  font-size: 50px;
+}
+h3 {
+  font-family: "Lemonada", cursive;
+  font-weight: 600;
+  font-size: 45px;
+}
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+h5 {
+  font-family: "Lemonada", cursive;
+  font-weight: 600;
+  font-size: 35px;
+}
+h6 {
+  font-family: "Love Ya Like A Sister", cursive;
+  font-weight: 400;
+  font-size: 15px;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 /******** Burger menu *********/
@@ -112,6 +140,8 @@ nav {
   nav.active .menu {
     display: block;
     background-color: #a1ab8d6c;
+    font-size: 15px;
+    color: white;
 
     position: absolute;
     top: 90px;
