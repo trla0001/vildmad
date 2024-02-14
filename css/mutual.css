@@ -11,6 +11,14 @@ img {
 }
 
 /******** Fonte styling*********/
+h1 {
+  font-family: "Love Ya Like A Sister", cursive;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+h2 {
+}
 
 /******** Burger menu *********/
 
