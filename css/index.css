@@ -1,0 +1,13 @@
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.pink_background {
+  background-color: #edb3b9;
+}
+
+.purple_background {
+  background-color: #9d87fb;
+  color: #ffffff;
+}

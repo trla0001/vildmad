@@ -10,7 +10,11 @@ img {
   display: block;
 }
 
-/******** Fonte styling*********/
+/******** Fonte og farve styling *********/
+main {
+  background-color: #f5f1e8;
+}
+
 h1 {
   font-family: "Love Ya Like A Sister", cursive;
   font-weight: 400;
@@ -25,7 +29,7 @@ h2 {
 h3 {
   font-family: "Lemonada", cursive;
   font-weight: 600;
-  font-size: 45px;
+  font-size: 22px;
 }
 h4 {
   font-family: "Montserrat", sans-serif;
@@ -35,7 +39,7 @@ h4 {
 h5 {
   font-family: "Lemonada", cursive;
   font-weight: 600;
-  font-size: 35px;
+  font-size: 15px;
 }
 h6 {
   font-family: "Love Ya Like A Sister", cursive;
