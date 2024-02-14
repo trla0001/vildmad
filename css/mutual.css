@@ -9,3 +9,116 @@ img {
   height: auto;
   display: block;
 }
+
+/******** Fonte styling*********/
+
+/******** Burger menu *********/
+
+/* header styling, flex */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f5f1e8;
+}
+
+/* navigation, placering*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* menu, padding + gap */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.icon {
+  width: 50%;
+  margin: auto;
+}
+
+/* menu hyperlink styling */
+.menu a {
+  display: block;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+/* Burgermenu, styling */
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Burgermenu streger, styling */
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #a1ab8d;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+
+/* flex af burgermenu indhold */
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Burgermenu, % vises */
+.burger {
+  display: none;
+}
+
+/* Burgermenu, styling + line animation, mobile version */
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #a1ab8d6c;
+
+    position: absolute;
+    top: 90px;
+    right: 0;
+    width: 50%;
+    z-index: 1;
+    padding: 0% 10%;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+    text-align: left;
+  }
+}
