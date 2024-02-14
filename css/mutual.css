@@ -164,7 +164,7 @@ nav {
 /*footer helt layout*/
 footer {
   background-color: #7d8d66;
-  color: aliceblue;
+  color: #183634;
   width: 100%;
   height: auto;
   display: flex;
@@ -200,7 +200,7 @@ footer .info {
 @media screen and (max-width: 800px) {
   footer {
     background-color: #7d8d66;
-    color: aliceblue;
+    color: #183634;
     width: 100%;
     height: auto;
     display: flex;
