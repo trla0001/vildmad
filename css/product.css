@@ -1,0 +1,62 @@
+/*article layout*/
+.singleview {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/*svamp img, spørgsmål og svarerne layout med styling*/
+.svamp_info,
+.sankeskab {
+  display: flex;
+  gap: 30px;
+}
+.svamp_info {
+  margin: 50px 100px;
+}
+.beskrivelse {
+  font-size: 16px;
+}
+/*sankeskaber sektioner*/
+.sankeskab {
+  margin: 20px 100px 0px 100px;
+  padding-bottom: 100px;
+}
+/*svamp overskrift margin og padding*/
+.overskrift {
+  margin-left: 100px;
+  padding-top: 50px;
+}
+/*svamp img sektion background box styling*/
+.svampe_img {
+  background-color: #95b566;
+  width: 100%;
+}
+/*sankeskaber sektioner overskrift styling*/
+.sankeskab_overskrift {
+  margin-left: 100px;
+}
+/*sankeskaber billeder background box styling*/
+.box_1,
+.box_2 {
+  width: 373px;
+  height: 373px;
+  background-color: #f5b13a;
+  position: relative;
+  overflow: hidden;
+}
+.box_2 {
+  background-color: #95bcf5;
+}
+
+/*skove image styling*/
+.skov_1 img,
+.skov_2 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+}
+.description {
+  position: absolute;
+  top: 258px;
+  left: 16px;
+}
