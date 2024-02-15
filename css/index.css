@@ -22,4 +22,11 @@
   margin: 5%;
 }
 
+/* Icons hidden i mobile version */
+@media (max-width: 800px) {
+  .season_icons {
+    display: none;
+  }
+}
+
 /* box shaddow til iconer */
