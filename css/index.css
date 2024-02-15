@@ -6,11 +6,26 @@
   }
 }
 
-/* De to tekst sektioner */
-.pink_background {
-  background-color: #edb3b9;
-  margin: 8% 10% 18% 10%;
-  padding: 5% 10% 5% 10%;
+/* Mushroom icon */
+.mushroom_icon {
+  width: 68%;
+}
+
+/* Hero text styling */
+.hero_txt {
+  display: grid;
+  place-items: center;
+  margin-top: 15%;
+}
+
+.hero_txt h5 {
+  margin: 0% 26% 0% 20%;
+}
+
+/* Hero img layout */
+.hero_img {
+  display: grid;
+  place-items: center;
 }
 
 /* iconer layout og styling */

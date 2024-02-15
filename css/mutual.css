@@ -11,29 +11,34 @@ img {
 }
 
 /************** Icons *************/
-/* Background styling */
-.spring_img {
-  background-color: #d7e5a1;
-}
-.summer_img {
-  background-color: #ffe550;
-}
-.autumn_img {
-  background-color: #f38234;
-}
-.winter_img {
-  background-color: #c5e3f5;
-}
 
 /* hover af icons */
-.spring_img:hover {
-  background-color: grey;
+.spring_img:hover,
+.summer_img:hover,
+.autumn_img:hover,
+.winter_img:hover {
+  animation-name: scale_kf;
+  animation-duration: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes scale_kf {
+  0% {
+    scale: 1;
+  }
+
+  100% {
+    scale: 1.1;
+  }
 }
 
 /* Layout af icons */
 .season_icons a {
   display: grid;
   place-items: center;
+  gap: 4%;
 }
 
 /******** Fonte og farve styling *********/
@@ -44,39 +49,35 @@ main {
 h1 {
   font-family: "Love Ya Like A Sister", cursive;
   font-weight: 400;
-  font-size: 35px;
+  font-size: 50px;
   padding-bottom: 8px;
 }
 
 h2 {
   font-family: "Love Ya Like A Sister", cursive;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 35px;
 }
 h3 {
-  font-family: "Lemonada", cursive;
-  font-weight: 600;
-  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
 }
 h4 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
   font-size: 40px;
 }
 h5 {
-  font-family: "Lemonada", cursive;
-  font-weight: 600;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
   font-size: 13px;
   padding-bottom: 10px;
 }
-h6 {
-  font-family: "Love Ya Like A Sister", cursive;
-  font-weight: 400;
-  font-size: 15px;
-}
+
 p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
   font-size: 20px;
 }
 
@@ -111,9 +112,8 @@ nav {
   display: none;
 }
 
-.icon {
-  width: 50%;
-  margin: auto;
+.logo {
+  width: 7%;
 }
 
 /* menu hyperlink styling */
@@ -176,7 +176,7 @@ nav {
 
   nav.active .menu {
     display: block;
-    background-color: #a1ab8d6c;
+    background-color: #a1ab8d;
     font-size: 15px;
     color: white;
 
