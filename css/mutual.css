@@ -10,6 +10,32 @@ img {
   display: block;
 }
 
+/************** Icons *************/
+/* Background styling */
+.spring_img {
+  background-color: #d7e5a1;
+}
+.summer_img {
+  background-color: #ffe550;
+}
+.autumn_img {
+  background-color: #f38234;
+}
+.winter_img {
+  background-color: #c5e3f5;
+}
+
+/* hover af icons */
+.spring_img:hover {
+  background-color: grey;
+}
+
+/* Layout af icons */
+.season_icons a {
+  display: grid;
+  place-items: center;
+}
+
 /******** Fonte og farve styling *********/
 main {
   background-color: #f5f1e8;
@@ -52,6 +78,11 @@ p {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 20px;
+}
+
+/* Link styling */
+a {
+  color: #183634;
 }
 
 /******** Burger menu *********/
