@@ -86,8 +86,10 @@ p {
 
 /* Link styling */
 a {
-  color: #7d8d66;
+  color: #3e3f43;
   text-decoration: underline;
+  font-family: "Love Ya Like A Sister";
+  font-size: 18px;
 }
 
 /******** Menu *********/

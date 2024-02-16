@@ -6,26 +6,87 @@
   }
 }
 
-/* Mushroom icon */
+/* Hero text styling, mobile version */
+@media (max-width: 800px) {
+  .hero_txt h1 {
+    text-align: center;
+  }
+  .hero_txt h5 {
+    margin: 0% 21% 0% 21%;
+  }
+}
+
+/* Hero text styling, desk version */
+@media (min-width: 800px) {
+  .hero_txt {
+    display: grid;
+    place-items: center;
+    margin-top: 15%;
+  }
+  .hero_txt h5 {
+    margin: 0% 26% 0% 20%;
+  }
+}
+
+/* Mushroom icon størrelse og placering */
 .mushroom_icon {
-  width: 68%;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 5%;
 }
 
-/* Hero text styling */
-.hero_txt {
-  display: grid;
-  place-items: center;
-  margin-top: 15%;
+/* Vild mad text styling */
+.round_txt {
+  text-align: center;
+  font-family: "Love Ya Like A Sister", cursive;
+  font-weight: 400;
+  font-size: 80px;
+  padding-bottom: 5%;
 }
 
-.hero_txt h5 {
-  margin: 0% 26% 0% 20%;
+/* Rotatation og px mellemrum af hver enkelt bogstav */
+.v {
+  transform: translate(6px, 53px) rotate(-43deg);
 }
 
-/* Hero img layout */
-.hero_img {
-  display: grid;
-  place-items: center;
+.i {
+  transform: translate(2px, 32px) rotate(-31deg);
+}
+
+.l {
+  transform: translate(2px, 17px) rotate(-22deg);
+}
+
+.d1 {
+  transform: translate(1px, 8px) rotate(-16deg);
+}
+
+.o {
+  transform: translate(0px, 5px) rotate(0deg);
+}
+
+.m {
+  transform: translate(-1px, 10px) rotate(10deg);
+}
+
+.a {
+  transform: translate(1px, 23px) rotate(29deg);
+}
+
+.d2 {
+  transform: translate(-3px, 45px) rotate(29deg);
+}
+
+/* Får span elementer til at stå på linje */
+span {
+  display: inline-block;
+}
+
+/* Vild mad hide mobile version */
+@media (max-width: 800px) {
+  .round_txt {
+    display: none;
+  }
 }
 
 /* iconer layout og styling */
@@ -34,5 +95,31 @@
   flex-direction: row;
   place-content: center;
   gap: 4%;
-  margin: 5%;
+  margin: 12% 2% 20% 2%;
+}
+
+.season_icons a:hover {
+  animation-name: scale_kf;
+  animation-duration: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes scale_kf {
+  0% {
+    scale: 1;
+  }
+
+  100% {
+    scale: 1.1;
+  }
+}
+
+.season_icons img {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.season_icons h6 {
+  padding-top: 10%;
 }
