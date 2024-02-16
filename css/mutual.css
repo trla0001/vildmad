@@ -10,6 +10,10 @@ img {
   display: block;
 }
 
+body {
+  background-color: #f5f1e8;
+}
+
 /************** Icons *************/
 
 /* hover af icons */
@@ -82,7 +86,8 @@ p {
 
 /* Link styling */
 a {
-  color: #183634;
+  color: #7d8d66;
+  text-decoration: underline;
 }
 
 /******** Menu *********/
@@ -109,15 +114,12 @@ nav {
 }
 
 .menu img {
-  width: 40%;
+  width: 70%;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
 }
 
 .menu a {
   display: block;
-  padding: 10px 0;
-  color: #7d8d66;
-  text-decoration: underline;
   transition: color 0.3s;
 }
 
@@ -160,6 +162,8 @@ nav {
   .flex {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    padding-bottom: 10%;
   }
   .menu {
     display: none;
@@ -186,10 +190,10 @@ nav {
     display: block;
     background-color: #f5f1e8;
     position: absolute;
-    top: 60px;
+    top: 30px;
     right: 0;
-    width: 50%;
     z-index: 1;
+    padding: 5% 5% 5% 5%;
   }
 
   nav.active .menu li {
@@ -199,6 +203,12 @@ nav {
   nav.active .menu a {
     font-size: 24px;
     text-align: left;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .hide {
+    display: none;
   }
 }
 
