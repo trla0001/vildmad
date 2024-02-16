@@ -38,7 +38,6 @@ img {
 .season_icons a {
   display: grid;
   place-items: center;
-  gap: 4%;
 }
 
 /******** Fonte og farve styling *********/
@@ -86,73 +85,82 @@ a {
   color: #183634;
 }
 
-/******** Burger menu *********/
+/******** Menu *********/
 
-/* header styling, flex */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 5px;
   background-color: #f5f1e8;
 }
 
-/* navigation, placering*/
+.logo {
+  width: 5%;
+}
+
 nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
-/* menu, padding + gap */
-
 .menu {
   display: flex;
-  flex-direction: column;
-  display: none;
 }
 
-.logo {
-  width: 7%;
+.menu img {
+  width: 40%;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* menu hyperlink styling */
 .menu a {
   display: block;
-  padding: 10px;
+  padding: 10px 0;
+  color: #7d8d66;
+  text-decoration: underline;
   transition: color 0.3s;
 }
 
-/* Burgermenu, styling */
+.menu a:hover {
+  color: #5e6c5b;
+  animation-name: scale_kf;
+  animation-duration: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes scale_kf {
+  0% {
+    scale: 1;
+  }
+
+  100% {
+    scale: 1.1;
+  }
+}
+
 .burger {
   width: 30px;
   height: 20px;
   cursor: pointer;
 }
 
-/* Burgermenu streger, styling */
 .burger .line {
   width: 100%;
   height: 2px;
-  background-color: #a1ab8d;
+  background-color: #7d8d66;
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
-
-/* flex af burgermenu indhold */
-.flex {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-/* Burgermenu, % vises */
 .burger {
   display: none;
 }
-
-/* Burgermenu, styling + line animation, mobile version */
 @media screen and (max-width: 800px) {
+  .flex {
+    display: flex;
+    flex-direction: row;
+  }
   .menu {
     display: none;
   }
@@ -176,16 +184,12 @@ nav {
 
   nav.active .menu {
     display: block;
-    background-color: #a1ab8d;
-    font-size: 15px;
-    color: white;
-
+    background-color: #f5f1e8;
     position: absolute;
-    top: 90px;
+    top: 60px;
     right: 0;
     width: 50%;
     z-index: 1;
-    padding: 0% 10%;
   }
 
   nav.active .menu li {
@@ -197,6 +201,8 @@ nav {
     text-align: left;
   }
 }
+
+/******** Footer *********/
 
 /*footer helt layout*/
 footer {
