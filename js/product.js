@@ -1,6 +1,6 @@
 //https://mymxopdswecfhtqjjdaj.supabase.co
 //eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im15bXhvcGRzd2VjZmh0cWpqZGFqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc4MTc1NzksImV4cCI6MjAyMzM5MzU3OX0.7qo3PlF20tNiwd1eHKnvFFIqGTxqqFUHABvXwE-T_fc
-
+/*
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 window.addEventListener("DOMContentLoaded", getSvampe);
@@ -41,4 +41,4 @@ function showData(svampe) {
   document.querySelector(".skov_img_2").alt = svampe.name;
 }
 
-getSvampe();
+getSvampe();*/
