@@ -1,7 +1,17 @@
+/* Side layout i mobile version */
 .gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 8%;
+  grid-template-columns: 1fr 1fr;
+  gap: 5%;
+}
+
+/* Side layout i desk version */
+@media screen and (min-width: 800px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 8%;
+  }
 }
 
 .small_mushroom {
