@@ -23,9 +23,6 @@
   display: grid;
   place-items: end center;
 }
-.svampe_name {
-  text-align: center;
-}
 .box_1,
 .box_2 {
   background-color: #009a30;
@@ -36,14 +33,6 @@
 
 .box_1 {
   margin-top: 20px;
-}
-
-.skov_name,
-.skov_name_2 {
-  text-align: center;
-  color: whitesmoke;
-  font-size: 24px;
-  padding: 25px 0;
 }
 .box_1 > img {
   width: 100%;
@@ -59,6 +48,21 @@
   display: grid;
   place-items: end center;
 }
+
+/*svamp navn og skove navn styling*/
+.svampe_name {
+  text-align: center;
+}
+
+.skov_name,
+.skov_name_2 {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 25px 0;
+}
+
 /*sankeskab billeder layout og styling*/
 .skov_1 {
   grid-column: 2/3;
@@ -89,28 +93,18 @@
 /*svampe informations answer styling*/
 .answer_spot,
 .answer_picking {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 27px;
-  padding-left: 20px;
-  padding-bottom: 20px;
+  padding: 10px 0 20px 20px;
 }
-/* ikoner header layout og styling */
-.season_product {
-  display: flex;
-  flex-direction: row;
-  gap: 70px;
-  place-content: center;
-  padding-top: 20px;
-}
+/* svampe description styling */
 .description {
   line-height: 30px;
+  font-size: 18px;
 }
 
 /* mobile version */
 @media (max-width: 800px) {
-  .season_product {
-    display: none;
-  }
   .singleview {
     display: flex;
     flex-direction: column;
