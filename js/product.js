@@ -24,6 +24,7 @@ function showData(svampe) {
   document.querySelector(".answer_spot").textContent = svampe.spot;
   document.querySelector(".skov_name").textContent = svampe.place;
   document.querySelector(".skov_name_2").textContent = svampe.place_2;
+  document.querySelector(".description").textContent = svampe.description;
 
   // Assuming svampe_img and skov_img are properties of the svampe object
   let svampe_img = svampe.svampe_img;
