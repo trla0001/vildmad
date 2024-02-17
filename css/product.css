@@ -38,7 +38,8 @@
   margin-top: 20px;
 }
 
-.skov_name {
+.skov_name,
+.skov_name_2 {
   text-align: center;
   color: whitesmoke;
   font-size: 24px;
@@ -129,7 +130,8 @@
   .infomation {
     padding-left: 0;
   }
-  .skov_name {
+  .skov_name,
+  .skov_name_2 {
     font-size: 20px;
   }
 }

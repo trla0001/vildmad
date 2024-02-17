@@ -18,14 +18,27 @@ function getSvampe() {
 
 function showData(svampe) {
   console.log(svampe);
+  let skov_image = document.querySelector(".skov_img_1");
   document.querySelector(".svampe_name").textContent = svampe.name;
   document.querySelector(".answer_picking").textContent = svampe.picking;
   document.querySelector(".answer_spot").textContent = svampe.spot;
-  document.querySelector(".svampe").src = `https://mymxopdswecfhtqjjdaj.supabase.co/images/webp/640/${svampe_img}.png`;
-  document.querySelector(".skov_img_1").src = `https://mymxopdswecfhtqjjdaj.supabase.co/images/webp/640/${skov_img}.jpg`;
-  document.querySelector(".skov_img_1").src.alt = svampe.name;
+  document.querySelector(".skov_name").textContent = svampe.place;
+  document.querySelector(".skov_name_2").textContent = svampe.place_2;
+
+  // Assuming svampe_img and skov_img are properties of the svampe object
+  let svampe_img = svampe.svampe_img; // Replace with the actual property name
+  let skov_img = svampe.skov_img; // Replace with the actual property name
+
+  //document.querySelector(".svampe").src = `https://mymxopdswecfhtqjjdaj.supabase.co/images/webp/640/${svampe_img}.png`;// vis ikke billeder type png. rette til jpg eller webp.
+
+  // Update the image source and alt attributes
+  skov_image.src = `https://mymxopdswecfhtqjjdaj.supabase.co/images/webp/640/${skov_img}.jpg`;
+  skov_image.alt = svampe.name;
+
+  // Assuming skov_img_2 is another property of the svampe object
+  let skov_img_2 = svampe.skov_img_2; // Replace with the actual property name
   document.querySelector(".skov_img_2").src = `https://mymxopdswecfhtqjjdaj.supabase.co/images/webp/640/${skov_img_2}.jpg`;
-  document.querySelector(".skov_img_2").src.alt = svampe.name;
+  document.querySelector(".skov_img_2").alt = svampe.name;
 }
 
 getSvampe();
