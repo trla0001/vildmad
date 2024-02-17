@@ -86,7 +86,8 @@
   padding-top: 20px;
 }
 /*svampe informations answer styling*/
-.answer {
+.answer_spot,
+.answer_picking {
   font-size: 16px;
   line-height: 27px;
   padding-left: 20px;
