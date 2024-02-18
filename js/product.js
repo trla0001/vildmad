@@ -1,4 +1,4 @@
-const url = "https://mymxopdswecfhtqjjdaj.supabase.co/rest/v1/Svampe";
+const url = "https://mymxopdswecfhtqjjdaj.supabase.co";
 const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im15bXhvcGRzd2VjZmh0cWpqZGFqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc4MTc1NzksImV4cCI6MjAyMzM5MzU3OX0.7qo3PlF20tNiwd1eHKnvFFIqGTxqqFUHABvXwE-T_fc";
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
@@ -6,7 +6,9 @@ const id = urlParams.get("id");
 window.addEventListener("DOMContentLoaded", getSvampe);
 
 function getSvampe() {
-  fetch(url, {
+  const selectUrl = `https://mymxopdswecfhtqjjdaj.supabase.co/rest/v1/Svampe?select=id,name,picking,spot,place,place_2,description,svampe_img,skov_img,skov_img_2`;
+
+  fetch(selectUrl, {
     method: "GET",
     headers: {
       apikey: key,
