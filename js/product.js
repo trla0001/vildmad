@@ -20,22 +20,23 @@ function getSvampe() {
 
 function showData(svampe) {
   console.log(svampe);
-  document.querySelector(".svampe_name").textContent = svampe.name;
-  document.querySelector(".answer_picking").textContent = svampe.picking;
-  document.querySelector(".answer_spot").textContent = svampe.spot;
-  document.querySelector(".skov_name").textContent = svampe.place;
-  document.querySelector(".skov_name_2").textContent = svampe.place_2;
-  document.querySelector(".description").textContent = svampe.description;
+  const svampelist = svampe[1];
+  document.querySelector(".svampe_name").textContent = svampelist.name;
+  document.querySelector(".answer_picking").textContent = svampelist.picking;
+  document.querySelector(".answer_spot").textContent = svampelist.spot;
+  document.querySelector(".skov_name").textContent = svampelist.place;
+  document.querySelector(".skov_name_2").textContent = svampelist.place_2;
+  document.querySelector(".description").textContent = svampelist.description;
   // Update the image source and alt attributes
-  document.querySelector(".svampe").src = `https://mymxopdswecfhtqjjdaj.supabase.co/images/webp/640/${svampe.svampe_img}.png`;
-  document.querySelector(".svampe").alt = svampe.name;
+  document.querySelector(".svampe").src = `https://mymxopdswecfhtqjjdaj.supabase.co/images/webp/640/${svampelist.svampe_img}.png`;
+  document.querySelector(".svampe").alt = svampelist.name;
 
   // Assuming skov_img and skov_img_2 are properties of svampe
-  document.querySelector(".skov_img_1").src = `https://mymxopdswecfhtqjjdaj.supabase.co/images/webp/640/${svampe.skov_img}.jpg`;
-  document.querySelector(".skov_img_1").alt = svampe.place;
+  document.querySelector(".skov_img_1").src = `https://mymxopdswecfhtqjjdaj.supabase.co/images/webp/640/${svampelist.skov_img}.jpg`;
+  document.querySelector(".skov_img_1").alt = svampelist.place;
 
-  document.querySelector(".skov_img_2").src = `https://mymxopdswecfhtqjjdaj.supabase.co/images/webp/640/${svampe.skov_img_2}.jpg`;
-  document.querySelector(".skov_img_2").alt = svampe.place_2;
+  document.querySelector(".skov_img_2").src = `https://mymxopdswecfhtqjjdaj.supabase.co/images/webp/640/${svampelist.skov_img_2}.jpg`;
+  document.querySelector(".skov_img_2").alt = svampelist.place_2;
 }
 
 getSvampe();
