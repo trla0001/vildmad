@@ -27,7 +27,8 @@ function showProduct(product) {
   copy.querySelector(".mushroom_name").textContent = product.name;
 
   // Link
-  copy.querySelector(".mushroom_link").setAttribute("href", `/rest/v1/Svampe?select=id${product.id}`);
+  copy.querySelector(".mushroom_link").href = `/product.html?id=${product.id}`;
+  //copy.querySelector(".mushroom_link").setAttribute("href", `/rest/v1/Svampe?select=id${product.id}`);
 
   // Tilføj layout tilfældigt
   const randomNumber = Math.random(); // Generer et tilfældigt tal mellem 0 og 1
