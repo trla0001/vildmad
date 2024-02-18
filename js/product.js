@@ -20,7 +20,7 @@ function getSvampe() {
 
 function showData(svampe) {
   console.log(svampe);
-  const svampelist = svampe[1];
+  const svampelist = svampe[1]; //bestemt data vises, men fra list vises de ikke.
   document.querySelector(".svampe_name").textContent = svampelist.name;
   document.querySelector(".answer_picking").textContent = svampelist.picking;
   document.querySelector(".answer_spot").textContent = svampelist.spot;
