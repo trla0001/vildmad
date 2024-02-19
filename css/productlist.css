@@ -15,6 +15,9 @@
   }
 }
 
+/************ Forskellige layout til card design ******/
+
+/* Styling af kasser */
 .small_mushroom {
   position: relative;
   width: 80%;
@@ -49,6 +52,7 @@
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Styling af tekst */
 .mushroom_name {
   position: absolute;
   bottom: 13%;
@@ -61,6 +65,7 @@
   left: 7%;
 }
 
+/* Fjerne underline på cards */
 article a {
   text-decoration: none;
 }
