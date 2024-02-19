@@ -6,10 +6,7 @@ const id = urlParams.get("id");
 window.addEventListener("DOMContentLoaded", getSvampe);
 
 function getSvampe() {
-  console.log("id", id);
   const selectUrl = `https://mymxopdswecfhtqjjdaj.supabase.co/rest/v1/Svampe?id=eq.${id}`;
-  console.log("selectUrl", selectUrl);
-
   fetch(selectUrl, {
     method: "GET",
     headers: {
@@ -31,15 +28,28 @@ function showSvamp(svampe) {
   document.querySelector(".skov_name_2").textContent = svampe.place_2;
   document.querySelector(".description").textContent = svampe.description;
   // Update the image source and alt attributes
-  document.querySelector(".svampe").src = product.svampe_img;
+  document.querySelector(".svampe").src = svampe.svampe_img;
   document.querySelector(".svampe").alt = svampe.name;
-
   // Assuming skov_img and skov_img_2 are properties of svampe
   document.querySelector(".skov_img_1").src = svampe.skov_img;
   document.querySelector(".skov_img_1").alt = svampe.place;
 
   document.querySelector(".skov_img_2").src = svampe.skov_img_2;
   document.querySelector(".skov_img_2").alt = svampe.place_2;
+
+  console.log("svampe.seasonicons", svampe.seasonicons);
+
+  svampe.seasonicons.forEach((icon, index) => {
+    document.querySelector(`.seasons_${index}`).src = icon;
+  });
+
+  /*
+  const nullElement = document.querySelector(".skov_img_1 .skov_img_2 .skov_name .skov_name_2");
+  if (svampe.nullElement) {
+    nullElement.style.display = "block";
+  } else {
+    nullElement.style.display = "none";
+  }*/
 }
 
 getSvampe();
