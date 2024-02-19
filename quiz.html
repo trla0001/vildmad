@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="css/mutual.css">
     <link rel="stylesheet" href="css/quiz.css">
-
+    <link rel="stylesheet" href="quiz.css">
     <title>Quiz</title>
 
 </head>
@@ -69,8 +69,54 @@
 
     </header>
     <main>
+        <h1>Quiz </h1>
+        <form id="quizForm">
+            <div class="question">
+                <p>What is the most common type of mushroom that people pick for food?</p>
+                <input type="radio" name="question1" value="a"> Button mushroom<br>
+                <input type="radio" name="question1" value="b"> Chanterelle<br>
+                <input type="radio" name="question1" value="c"> Fly agaric<br>
 
+            </div>
 
+            <div class="question">
+                <p>Which type of mushroom is known to be bioluminescent, meaning it emits light in the dark?</p>
+                <input type="radio" name="question2" value="a"> Shrimp<br>
+                <input type="radio" name="question2" value="b"> Glowing mushroom<br>
+                <input type="radio" name="question2" value="c"> Chanterelle<br>
+
+            </div>
+
+            <div class="question">
+                <p>Which of the following mushrooms is known to be parasitic and attacks trees?</p>
+                <input type="radio" name="question3" value="a"> Chanterelle<br>
+                <input type="radio" name="question3" value="b"> Artist's conk<br>
+                <input type="radio" name="question3" value="c"> Milky cap<br>
+
+            </div>
+
+            <div class="question">
+                <p>Which mushroom is known for its sharp, peppery flavor and is common in forest areas?</p>
+                <input type="radio" name="question4" value="a"> Wood anemone<br>
+                <input type="radio" name="question4" value="b"> Hedgehog mushroom<br>
+                <input type="radio" name="question4" value="c"> Birch polypore<br>
+
+            </div>
+
+            <div class="question">
+                <p>What is the toxic precursor to the edible mushroom chanterelle?</p>
+                <input type="radio" name="question5" value="a"> Gray fly agaric<br>
+                <input type="radio" name="question5" value="b"> Red fly agaric<br>
+                <input type="radio" name="question5" value="c"> Orange fly agaric<br>
+
+            </div>
+
+            <input type="submit">
+        </form>
+        <div id="alertBox" class="alert-box">
+            <p id="scoreText"></p>
+            <button id="closeBtn">X</button>
+        </div>
     </main>
     <footer>
         <div class="footer_title">
@@ -100,6 +146,7 @@
     </footer>
 
     <script src="js/mutual.js"></script>
+    <script src="quiz.js"></script>
 </body>
 
 </html>
