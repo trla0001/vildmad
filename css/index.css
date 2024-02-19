@@ -128,3 +128,16 @@ span {
     display: none;
   }
 }
+section {
+  padding: 2%;
+}
+.quiz_button a {
+  padding: 2%;
+  background-color: rgb(255, 93, 34);
+  border-radius: 10%;
+  color: aliceblue;
+}
+.quiz_button {
+  padding: auto;
+  margin: 3% 0%;
+}
