@@ -1,10 +1,12 @@
-/* side layout, grid - Desk version*/
+/* Side layout, grid - Desk version*/
 @media (min-width: 800px) {
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/*********** Indhold i venstre side af grid ************/
 
 /* Hero text styling, mobile version */
 @media (max-width: 800px) {
@@ -28,6 +30,44 @@
   }
 }
 
+/* Knapper/iconer layout og styling */
+.season_icons img {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.season_icons h6 {
+  padding-top: 10%;
+}
+
+.season_icons {
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+  gap: 4%;
+  margin: 12% 2% 20% 2%;
+}
+
+/* Hover styling */
+.season_icons a:hover {
+  animation-name: scale_kf;
+  animation-duration: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes scale_kf {
+  0% {
+    scale: 1;
+  }
+
+  100% {
+    scale: 1.1;
+  }
+}
+
+/*********** Indhold i højre side af grid ************/
+
 /* Mushroom icon størrelse og placering */
 .mushroom_icon {
   width: 50%;
@@ -44,7 +84,7 @@
   padding-bottom: 5%;
 }
 
-/* Rotatation og px mellemrum af hver enkelt bogstav */
+/* Rotation og mellemrum af hvert bogstav. translate(x-akse, y-akse) rotate(- = mod uret, + = med uret) */
 .v {
   transform: translate(6px, 53px) rotate(-43deg);
 }
@@ -87,39 +127,4 @@ span {
   .round_txt {
     display: none;
   }
-}
-
-/* iconer layout og styling */
-.season_icons {
-  display: flex;
-  flex-direction: row;
-  place-content: center;
-  gap: 4%;
-  margin: 12% 2% 20% 2%;
-}
-
-.season_icons a:hover {
-  animation-name: scale_kf;
-  animation-duration: 0s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-fill-mode: both;
-}
-
-@keyframes scale_kf {
-  0% {
-    scale: 1;
-  }
-
-  100% {
-    scale: 1.1;
-  }
-}
-
-.season_icons img {
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
-}
-
-.season_icons h6 {
-  padding-top: 10%;
 }
