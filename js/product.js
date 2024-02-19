@@ -48,14 +48,17 @@ function showSvamp(svampe) {
   if (svampe.skov_img_2 !== null) {
     document.querySelector(".skov_img_2").src = svampe.skov_img_2;
     document.querySelector(".skov_img_2").style.display = "block";
+    document.querySelector(".box_2").classList.remove("no-display");
   } else {
     document.querySelector(".skov_img_2").style.display = "none";
+    document.querySelector(".box_2").classList.remove("no-display");
   }
-  if (svampe.skov_img_2 !== null) {
-    document.querySelector(".skov_name_2").src = svampe.skov_img_2;
-    document.querySelector(".skov_name_2").style.display = "block";
+  // Check for place_2
+  if (svampe.place_2 !== null) {
+    document.querySelector(".skov_name_2").textContent = svampe.place_2;
+    document.querySelector(".box_2").style.display = "block";
   } else {
-    document.querySelector(".skov_name_2").style.display = "none";
+    document.querySelector(".box_2").style.display = "none";
   }
 }
 
