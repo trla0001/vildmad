@@ -44,7 +44,7 @@ function showSvamp(svampe) {
     document.querySelector(`.seasons_${index}`).src = icon;
   });
 
-  // If skov_img_2 is missing, hide the corresponding image element
+  // If skov image og name is missing, hide the corresponding image and name element
   if (svampe.skov_img_2 !== null) {
     document.querySelector(".skov_img_2").src = svampe.skov_img_2;
     document.querySelector(".skov_img_2").style.display = "block";
