@@ -12,42 +12,30 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/c5d83fc88a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/mutual.css">
-    <link rel="stylesheet" href="css/product.css">
-    <title>Product</title>
+    <link rel="stylesheet" href="css/productlist.css">
+    <title>Product list</title>
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <img src="svg/logo.svg" alt="logo til Vildmad">
+            <a href="index.html"><img src="svg/logo.svg" alt="logo til Vildmad"></a>
         </div>
         <nav>
 
             <div class="menu">
-                <div class="flex">
-                    <a class="spring_link" href=""><img src="svg/test_icon.svg" alt="icon">
-
-                    </a>
+                <a class="spring_link" href=""><img class="spring_img" src="svg/spring.svg" alt="">
                     <h6>Spring</h6>
-                </div>
-                <div class="flex">
-                    <a class="summer_link" href=""><img src="svg/test_icon.svg" alt="icon">
-
-                    </a>
+                </a>
+                <a class="summer_link" href=""><img class="summer_img" src="svg/summer.svg" alt="">
                     <h6>Summer</h6>
-                </div>
-                <div class="flex">
-                    <a class="autumn_link" href=""><img src="svg/test_icon.svg" alt="icon">
-
-                    </a>
+                </a>
+                <a class="autumn_link" href=""><img class="autumn_img" src="svg/autumn.svg" alt="">
                     <h6>Autumn</h6>
-                </div>
-                <div class="flex">
-                    <a class="winter_link" href=""><img src="svg/test_icon.svg" alt="icon">
-
-                    </a>
+                </a>
+                <a class="winter_link" href=""><img class="winter_img" src="svg/winter.svg" alt="">
                     <h6>Winter</h6>
-                </div>
+                </a>
             </div>
 
             <div class="burger">
@@ -59,7 +47,20 @@
     </header>
 
     <main>
+        <section>
+            <h1><span class="season_name">Autumn</span> Mushrooms</h1>
+            <div class="gallery"></div>
+        </section>
 
+
+        <template>
+            <a class="mushroom_link" href="">
+                <article class="mushroom_article">
+                    <img class="mushroom_img" src="svg/kantarel.png" alt="">
+                    <h4 class="mushroom_name">kantarel</h4>
+                </article>
+            </a>
+        </template>
 
     </main>
     <footer>

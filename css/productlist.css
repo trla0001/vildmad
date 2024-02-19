@@ -1,48 +1,70 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-footer {
-  background-color: #7d8d66;
-  color: aliceblue;
-  width: 100%;
-  height: auto;
-  display: flex;
-  padding: 20px;
-  justify-content: space-between;
-}
-.footer_title {
-  justify-content: left;
-  font-family: "Love Ya Like A Sister", cursive;
-  font-style: normal;
-  font-size: 40px;
-  padding-left: 10px;
-}
-.info {
+/* Side layout i mobile version */
+.gallery {
   display: grid;
-  line-height: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 0;
+  grid-column-gap: 5%;
 }
-.adress,
-.telefon,
-.email {
-  display: flex;
-  gap: 8px;
+
+/* Side layout i desk version */
+@media screen and (min-width: 800px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 5%;
+  }
 }
-.ikoner {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  align-items: center;
-  padding-top: 15px;
-  font-size: 20px;
+
+/************ Forskellige layout til card design ******/
+
+/* Styling af kasser */
+.small_mushroom {
+  position: relative;
+  width: 80%;
+  background-color: #ed1e79;
+  padding: 5% 5% 6% 5%;
+  margin: 25% 0% 35% 0%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
-.footer_logo {
-  display: flex;
-  width: 100px;
+
+.small_mushroom2 {
+  position: relative;
+  width: 80%;
+  background-color: #b009ff;
+  padding: 5% 5% 6% 5%;
+  margin: 0% 0% 60% 0%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.big_mushroom {
+  position: relative;
+  background-color: #107dff;
+  margin: 25% 0% 5% 0%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.big_mushroom2 {
+  position: relative;
+  background-color: #ff9a24;
+  padding: 0% 0% 5% 0%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling af tekst */
+.mushroom_name {
+  padding: 5% 0% 0% 0%;
+  display: grid;
+  place-content: center;
+  text-decoration: none;
+}
+
+.mushroom_name2 {
+  position: absolute;
+  bottom: 8%;
+  left: 7%;
+}
+
+/* Fjerne underline på cards */
+article a {
+  text-decoration: none;
 }
