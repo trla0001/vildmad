@@ -4,7 +4,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 
 window.addEventListener("DOMContentLoaded", getSvampe);
-
+//fetch id
 function getSvampe() {
   const selectUrl = `https://mymxopdswecfhtqjjdaj.supabase.co/rest/v1/Svampe?id=eq.${id}`;
   fetch(selectUrl, {
@@ -18,7 +18,7 @@ function getSvampe() {
       showSvamp(json[0]);
     });
 }
-
+//kalder på data
 function showSvamp(svampe) {
   console.log(svampe);
   document.querySelector(".svampe_name").textContent = svampe.name;
@@ -37,19 +37,26 @@ function showSvamp(svampe) {
   document.querySelector(".skov_img_2").src = svampe.skov_img_2;
   document.querySelector(".skov_img_2").alt = svampe.place_2;
 
+  //season ikoner loop
   console.log("svampe.seasonicons", svampe.seasonicons);
 
   svampe.seasonicons.forEach((icon, index) => {
     document.querySelector(`.seasons_${index}`).src = icon;
   });
 
-  /*
-  const nullElement = document.querySelector(".skov_img_1 .skov_img_2 .skov_name .skov_name_2");
-  if (svampe.nullElement) {
-    nullElement.style.display = "block";
+  // If skov_img_2 is missing, hide the corresponding image element
+  if (svampe.skov_img_2 !== null) {
+    document.querySelector(".skov_img_2").src = svampe.skov_img_2;
+    document.querySelector(".skov_img_2").style.display = "block";
   } else {
-    nullElement.style.display = "none";
-  }*/
+    document.querySelector(".skov_img_2").style.display = "none";
+  }
+  if (svampe.skov_img_2 !== null) {
+    document.querySelector(".skov_name_2").src = svampe.skov_img_2;
+    document.querySelector(".skov_name_2").style.display = "block";
+  } else {
+    document.querySelector(".skov_name_2").style.display = "none";
+  }
 }
 
 getSvampe();
