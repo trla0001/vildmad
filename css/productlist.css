@@ -17,6 +17,10 @@
   }
 }
 
+.flex_txt {
+  display: flex;
+}
+
 /************ Forskellige layout til card design ******/
 
 /* Card text layout */
@@ -68,6 +72,7 @@
 /* Spiselig icon styling */
 .icon {
   width: 20%;
+  border-radius: 20%;
 }
 
 /* Baggrundsfarver til card */
