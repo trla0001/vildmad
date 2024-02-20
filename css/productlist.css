@@ -7,6 +7,11 @@
   padding-bottom: 15%;
   padding-top: 4%;
 }
+.gallery_txt {
+  display: grid;
+  grid-column: 1 / span 2;
+  margin-bottom: -20%;
+}
 
 /* Side layout i desk version */
 @media screen and (min-width: 800px) {
@@ -14,6 +19,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2%;
+  }
+  .gallery_txt {
+    display: grid;
+    grid-column: 1 / span 2;
+    margin-top: 15%;
+  }
+  .gallery_txt h5 {
+    margin-top: -27%;
   }
 }
 
