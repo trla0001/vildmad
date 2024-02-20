@@ -41,6 +41,7 @@ function showSvamp(svampe) {
   console.log("svampe.seasonicons", svampe.seasonicons);
 
   svampe.seasonicons.forEach((icon, index) => {
+    document.querySelector(`.seasons_${index}`).classList.remove("hide");
     document.querySelector(`.seasons_${index}`).src = icon;
   });
 

@@ -104,7 +104,9 @@
   display: flex;
   justify-content: space-around;
 }
-
+.hide {
+  display: none;
+}
 /* mobile version */
 @media (max-width: 800px) {
   .singleview {
