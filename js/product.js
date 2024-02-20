@@ -4,12 +4,9 @@ const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 
 window.addEventListener("DOMContentLoaded", getSvampe);
-
+//fetch id
 function getSvampe() {
-  console.log("id", id);
   const selectUrl = `https://mymxopdswecfhtqjjdaj.supabase.co/rest/v1/Svampe?id=eq.${id}`;
-  console.log("selectUrl", selectUrl);
-
   fetch(selectUrl, {
     method: "GET",
     headers: {
@@ -21,7 +18,7 @@ function getSvampe() {
       showSvamp(json[0]);
     });
 }
-
+//kalder på data
 function showSvamp(svampe) {
   console.log(svampe);
   document.querySelector(".svampe_name").textContent = svampe.name;
@@ -31,15 +28,38 @@ function showSvamp(svampe) {
   document.querySelector(".skov_name_2").textContent = svampe.place_2;
   document.querySelector(".description").textContent = svampe.description;
   // Update the image source and alt attributes
-  document.querySelector(".svampe").src = product.svampe_img;
+  document.querySelector(".svampe").src = svampe.svampe_img;
   document.querySelector(".svampe").alt = svampe.name;
-
   // Assuming skov_img and skov_img_2 are properties of svampe
   document.querySelector(".skov_img_1").src = svampe.skov_img;
   document.querySelector(".skov_img_1").alt = svampe.place;
 
   document.querySelector(".skov_img_2").src = svampe.skov_img_2;
   document.querySelector(".skov_img_2").alt = svampe.place_2;
+
+  //season ikoner loop
+  console.log("svampe.seasonicons", svampe.seasonicons);
+
+  svampe.seasonicons.forEach((icon, index) => {
+    document.querySelector(`.seasons_${index}`).src = icon;
+  });
+
+  // If skov image og name is missing, hide the corresponding image and name element
+  if (svampe.skov_img_2 !== null) {
+    document.querySelector(".skov_img_2").src = svampe.skov_img_2;
+    document.querySelector(".skov_img_2").style.display = "block";
+    document.querySelector(".box_2").classList.remove("no-display");
+  } else {
+    document.querySelector(".skov_img_2").style.display = "none";
+    document.querySelector(".box_2").classList.remove("no-display");
+  }
+  // Check for place_2
+  if (svampe.place_2 !== null) {
+    document.querySelector(".skov_name_2").textContent = svampe.place_2;
+    document.querySelector(".box_2").style.display = "block";
+  } else {
+    document.querySelector(".box_2").style.display = "none";
+  }
 }
 
 getSvampe();
