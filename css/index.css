@@ -86,9 +86,10 @@ section {
 
 .quiz_button a {
   padding: 2%;
-  background-color: #f09030;
+  background-color: #e3780c;
   border-radius: 10%;
-  color: aliceblue;
+  color: black;
+  font-weight: bold;
 }
 .quiz_button {
   padding: auto;
