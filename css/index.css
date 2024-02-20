@@ -90,6 +90,7 @@ section {
   border-radius: 10%;
   color: black;
   font-weight: bold;
+  font-family: "Lato", sans-serif;
 }
 .quiz_button {
   padding: auto;
