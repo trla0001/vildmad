@@ -313,9 +313,3 @@ footer .info {
     width: 100px;
   }
 }
-
-@media screen and (min-width: 800px) {
-  .socialmedia {
-    margin-left: -56%;
-  }
-}
