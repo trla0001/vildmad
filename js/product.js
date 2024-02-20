@@ -6,7 +6,9 @@ const id = urlParams.get("id");
 window.addEventListener("DOMContentLoaded", getSvampe);
 
 function getSvampe() {
-  const selectUrl = `https://mymxopdswecfhtqjjdaj.supabase.co/rest/v1/Svampe?select=id,name,picking,spot,place,place_2,description,svampe_img,skov_img,skov_img_2`;
+  console.log("id", id);
+  const selectUrl = `https://mymxopdswecfhtqjjdaj.supabase.co/rest/v1/Svampe?id=eq.${id}`;
+  console.log("selectUrl", selectUrl);
 
   fetch(selectUrl, {
     method: "GET",
@@ -15,10 +17,12 @@ function getSvampe() {
     },
   })
     .then((res) => res.json())
-    .then(showData);
+    .then((json) => {
+      showSvamp(json[0]);
+    });
 }
 
-function showData(svampe) {
+function showSvamp(svampe) {
   console.log(svampe);
   document.querySelector(".svampe_name").textContent = svampe.name;
   document.querySelector(".answer_picking").textContent = svampe.picking;
@@ -27,14 +31,14 @@ function showData(svampe) {
   document.querySelector(".skov_name_2").textContent = svampe.place_2;
   document.querySelector(".description").textContent = svampe.description;
   // Update the image source and alt attributes
-  document.querySelector(".svampe").src = `https://mymxopdswecfhtqjjdaj.supabase.co/images/webp/640/${svampe.svampe_img}.png`;
+  document.querySelector(".svampe").src = product.svampe_img;
   document.querySelector(".svampe").alt = svampe.name;
 
   // Assuming skov_img and skov_img_2 are properties of svampe
-  document.querySelector(".skov_img_1").src = `https://mymxopdswecfhtqjjdaj.supabase.co/images/webp/640/${svampe.skov_img}.jpg`;
+  document.querySelector(".skov_img_1").src = svampe.skov_img;
   document.querySelector(".skov_img_1").alt = svampe.place;
 
-  document.querySelector(".skov_img_2").src = `https://mymxopdswecfhtqjjdaj.supabase.co/images/webp/640/${svampe.skov_img_2}.jpg`;
+  document.querySelector(".skov_img_2").src = svampe.skov_img_2;
   document.querySelector(".skov_img_2").alt = svampe.place_2;
 }
 
