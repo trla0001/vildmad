@@ -13,9 +13,6 @@
   .hero_txt h1 {
     text-align: center;
   }
-  .hero_txt h5 {
-    margin: 0% 21% 0% 21%;
-  }
 }
 
 /* Hero text styling, desk version */
@@ -24,9 +21,6 @@
     display: grid;
     place-items: center;
     margin-top: 15%;
-  }
-  .hero_txt h5 {
-    margin: 0% 26% 0% 20%;
   }
 }
 
@@ -42,9 +36,8 @@
 .season_icons {
   display: flex;
   flex-direction: row;
-  place-content: center;
-  gap: 4%;
-  margin: 12% 2% 20% 2%;
+  gap: 2%;
+  margin: 7% 0% 7% 2%;
 }
 
 /* Hover styling */
@@ -129,15 +122,17 @@ span {
   }
 }
 section {
-  padding: 2%;
+  margin-top: -10%;
+  margin-bottom: 8%;
+  margin-left: 1%;
 }
 .quiz_button a {
   padding: 2%;
-  background-color: rgb(255, 93, 34);
+  background-color: #f09030;
   border-radius: 10%;
   color: aliceblue;
 }
 .quiz_button {
   padding: auto;
-  margin: 3% 0%;
+  margin: 4% 0%;
 }

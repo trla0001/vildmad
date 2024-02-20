@@ -45,7 +45,7 @@ main {
 /* Layout af icons */
 .season_icons a {
   display: grid;
-  place-items: center;
+  font-family: "Lato", sans-serif;
 }
 
 /******** Fonte og farve styling *********/
@@ -92,7 +92,7 @@ p {
 
 /* Link styling */
 a {
-  color: #3e3f43;
+  color: #6a6b6e;
   text-decoration: underline;
   font-family: "Love Ya Like A Sister";
   font-size: 18px;
@@ -109,7 +109,7 @@ header {
 }
 
 .logo {
-  width: 5%;
+  width: 8%;
 }
 
 nav {
@@ -225,8 +225,8 @@ nav {
 
 /*footer helt layout*/
 footer {
-  background-color: #7d8d66;
-  color: #183634;
+  background-color: #004e29;
+  color: #fff7e7;
   width: 100%;
   height: auto;
   display: flex;
@@ -242,6 +242,7 @@ footer {
 footer .info {
   display: grid;
   line-height: 20px;
+  margin-left: 2%;
 }
 .adress,
 .telefon,
