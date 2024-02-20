@@ -6,6 +6,12 @@
   }
 }
 
+/* Vild mad styling */
+h1 {
+  display: grid;
+  place-content: center;
+}
+
 /*********** Indhold i venstre side af grid ************/
 
 /* Hero text styling, mobile version */
@@ -18,26 +24,23 @@
 /* Hero text styling, desk version */
 @media (min-width: 800px) {
   .hero_txt {
-    display: grid;
-    place-items: center;
-    margin-top: 15%;
+    margin: 15% 0 0 6%;
   }
 }
 
 /* Knapper/iconer layout og styling */
-.season_icons img {
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
-}
 
 .season_icons h6 {
   padding-top: 10%;
+  display: flex;
+  justify-content: center;
 }
 
 .season_icons {
   display: flex;
   flex-direction: row;
   gap: 2%;
-  margin: 7% 0% 7% 2%;
+  margin: 7% 0% 7% 5%;
 }
 
 /* Hover styling */
@@ -63,69 +66,24 @@
 
 /* Mushroom icon størrelse og placering */
 .mushroom_icon {
-  width: 50%;
+  width: 70%;
   margin: auto;
   padding-bottom: 5%;
 }
 
-/* Vild mad text styling */
-.round_txt {
-  text-align: center;
-  font-family: "Love Ya Like A Sister", cursive;
-  font-weight: 400;
-  font-size: 80px;
-  padding-bottom: 5%;
-}
-
-/* Rotation og mellemrum af hvert bogstav. translate(x-akse, y-akse) rotate(- = mod uret, + = med uret) */
-.v {
-  transform: translate(6px, 53px) rotate(-43deg);
-}
-
-.i {
-  transform: translate(2px, 32px) rotate(-31deg);
-}
-
-.l {
-  transform: translate(2px, 17px) rotate(-22deg);
-}
-
-.d1 {
-  transform: translate(1px, 8px) rotate(-16deg);
-}
-
-.o {
-  transform: translate(0px, 5px) rotate(0deg);
-}
-
-.m {
-  transform: translate(-1px, 10px) rotate(10deg);
-}
-
-.a {
-  transform: translate(1px, 23px) rotate(29deg);
-}
-
-.d2 {
-  transform: translate(-3px, 45px) rotate(29deg);
-}
-
-/* Får span elementer til at stå på linje */
-span {
-  display: inline-block;
-}
-
 /* Vild mad hide mobile version */
+
+section {
+  margin-top: -15%;
+  margin-bottom: 8%;
+  margin-left: 3%;
+}
 @media (max-width: 800px) {
-  .round_txt {
-    display: none;
+  section {
+    margin-top: 0;
   }
 }
-section {
-  margin-top: -10%;
-  margin-bottom: 8%;
-  margin-left: 1%;
-}
+
 .quiz_button a {
   padding: 2%;
   background-color: #f09030;
