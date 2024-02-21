@@ -27,9 +27,11 @@ function showSvamp(svampe) {
   document.querySelector(".skov_name").textContent = svampe.place;
   document.querySelector(".skov_name_2").textContent = svampe.place_2;
   document.querySelector(".description").textContent = svampe.description;
+
   // Update the image source and alt attributes
   document.querySelector(".svampe").src = svampe.svampe_img;
   document.querySelector(".svampe").alt = svampe.name;
+
   // Assuming skov_img and skov_img_2 are properties of svampe
   document.querySelector(".skov_img_1").src = svampe.skov_img;
   document.querySelector(".skov_img_1").alt = svampe.place;
