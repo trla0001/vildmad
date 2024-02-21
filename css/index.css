@@ -16,8 +16,23 @@ h1 {
 
 /* Hero text styling, mobile version */
 @media (max-width: 800px) {
-  .hero_txt h1 {
-    text-align: center;
+  .hero_txt h5,
+  h2 {
+    padding-top: 5%;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+  .forside_h1 {
+    font-size: 80px;
+  }
+  .hero_txt h2 {
+    font-size: 40px;
+  }
+  .hero_txt h5 {
+    font-size: 15px;
+  }
+  section .quiz_button {
+    margin-left: 7%;
   }
 }
 
@@ -25,6 +40,23 @@ h1 {
 @media (min-width: 800px) {
   .hero_txt {
     margin: 15% 0 0 6%;
+  }
+  .hero_txt h5 {
+    margin-top: 3%;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .hero_txt h2 {
+    font-size: 50px;
+  }
+  .tekst_icons {
+    margin-left: 10%;
+  }
+  .forside_h1 {
+    font-size: 120px;
+  }
+  section h2 {
+    font-size: 30px;
   }
 }
 
@@ -76,7 +108,7 @@ h1 {
 section {
   margin-top: -15%;
   margin-bottom: 8%;
-  margin-left: 3%;
+  margin-left: 7%;
 }
 @media (max-width: 800px) {
   section {
@@ -95,4 +127,8 @@ section {
 .quiz_button {
   padding: auto;
   margin: 4% 0%;
+}
+.quiz_button:hover {
+  transform: scale(1.2);
+  margin-left: 9%;
 }
