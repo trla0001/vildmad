@@ -111,6 +111,7 @@
 .description {
   line-height: 30px;
   font-size: 18px;
+  font-weight: bold;
   padding: 0 20px;
 }
 .season_name {
