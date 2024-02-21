@@ -4,13 +4,17 @@
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 0;
   gap: 5%;
-  padding-bottom: 15%;
+  padding-bottom: 20%;
   padding-top: 4%;
 }
 .gallery_txt {
   display: grid;
   grid-column: 1 / span 2;
   margin-bottom: -20%;
+}
+
+.gallery_txt h5 {
+  padding-bottom: 20%;
 }
 
 /* Side layout i desk version */

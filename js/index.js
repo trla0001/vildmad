@@ -17,10 +17,14 @@ function getSvampe() {
     console.log(products);
 
     // Link
-
     document.querySelector(".spring_link").href = `productlist.html?season=Spring`;
     document.querySelector(".summer_link").href = `productlist.html?season=Summer`;
     document.querySelector(".autumn_link").href = `productlist.html?season=Autumn`;
     document.querySelector(".winter_link").href = `productlist.html?season=Winter`;
+
+    document.querySelector(".spring_link2").href = `productlist.html?season=Spring`;
+    document.querySelector(".summer_link2").href = `productlist.html?season=Summer`;
+    document.querySelector(".autumn_link2").href = `productlist.html?season=Autumn`;
+    document.querySelector(".winter_link2").href = `productlist.html?season=Winter`;
   }
 }
