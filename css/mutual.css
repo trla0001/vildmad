@@ -265,6 +265,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
 }
+
 /*footer VIlDMAD titles font*/
 .footer_title {
   padding-left: 20px;
@@ -278,9 +279,13 @@ footer .info {
 .telefon,
 .email {
   display: flex;
-  gap: 8px;
+  gap: 10px;
+  margin-left: 5%;
+  font-size: 20px;
 }
-
+.socialmedia h6 {
+  font-size: 15px;
+}
 .info i {
   display: flex;
   align-self: center;
@@ -293,7 +298,7 @@ footer .info {
   gap: 15px;
   align-items: center;
   padding-top: 15px;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 @media screen and (max-width: 800px) {
