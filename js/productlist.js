@@ -7,6 +7,7 @@ const season = urlParams.get("season");
 window.addEventListener("DOMContentLoaded", getSvampe);
 
 function getSvampe() {
+  console.log("season", season);
   fetch(url + `/rest/v1/Svampe?season=ilike.${season}`, {
     method: "GET",
     headers: {
@@ -18,6 +19,7 @@ function getSvampe() {
 
   function showProducts(products) {
     console.log(products);
+    document.querySelector(".season_name").textContent = season;
     //looper og kalder showProducts
     products.forEach(showProduct);
   }
@@ -39,4 +41,3 @@ function getSvampe() {
     document.querySelector(".gallery").appendChild(copy);
   }
 }
-getSvampe();

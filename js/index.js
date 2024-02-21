@@ -18,12 +18,9 @@ function getSvampe() {
 
     // Link
 
-    document.querySelector(".spring_link").href = `/rest/v1/Svampe?season=ilike.*Spring*`;
-    document.querySelector(".summer_link").href = `/rest/v1/Svampe?season=ilike.*Summer*`;
-    document.querySelector(".autumn_link").href = `/rest/v1/Svampe?season=ilike.*Autumn*`;
-    document.querySelector(".winter_link").href = `/rest/v1/Svampe?season=ilike.*Winter*`;
+    document.querySelector(".spring_link").href = `productlist.html?season=Spring`;
+    document.querySelector(".summer_link").href = `productlist.html?season=Summer`;
+    document.querySelector(".autumn_link").href = `productlist.html?season=Autumn`;
+    document.querySelector(".winter_link").href = `productlist.html?season=Winter`;
   }
 }
-
-getSvampe();
-// document.querySelector(".spring_link").href = `/rest/v1/Svampe?season=ilike.${products.Spring}`;
