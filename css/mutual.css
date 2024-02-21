@@ -42,29 +42,6 @@ main {
   }
 }
 
-/* Current af icons */
-.current {
-  animation-name: scale_kf;
-  animation-duration: 0s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-fill-mode: both;
-}
-
-@keyframes scale_kf {
-  100% {
-    scale: 1.1;
-  }
-
-  100% {
-    scale: 1.1;
-  }
-}
-
-.gray {
-  filter: grayscale(100%);
-}
-
 /* Layout af icons link */
 .season_icons a {
   display: grid;
