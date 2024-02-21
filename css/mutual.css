@@ -42,7 +42,30 @@ main {
   }
 }
 
-/* Layout af icons */
+/* Current af icons */
+.current {
+  animation-name: scale_kf;
+  animation-duration: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes scale_kf {
+  100% {
+    scale: 1.1;
+  }
+
+  100% {
+    scale: 1.1;
+  }
+}
+
+.gray {
+  filter: grayscale(100%);
+}
+
+/* Layout af icons link */
 .season_icons a {
   display: grid;
   font-family: "Lato", sans-serif;
@@ -125,7 +148,6 @@ nav {
 .menu img {
   width: 70%;
   border-radius: 100%;
-  filter: grayscale(100%);
   margin: auto;
 }
 
