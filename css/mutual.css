@@ -61,10 +61,6 @@ main {
   }
 }
 
-.gray {
-  filter: grayscale(100%);
-}
-
 /* Layout af icons link */
 .season_icons a {
   display: grid;
