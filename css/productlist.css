@@ -50,7 +50,6 @@
 /* Styling af card */
 .mushroom_article {
   position: relative;
-  background-color: #ff9a24;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -93,15 +92,15 @@
 }
 
 /* Baggrundsfarver til card */
-.background1 {
-  background-color: #c762df;
+.spring {
+  background-color: #afcb8c;
 }
-.background2 {
-  background-color: #ffdc60;
+.summer {
+  background-color: #ffe866;
 }
-.background3 {
+.autumn {
   background-color: #f09030;
 }
-.background4 {
-  background-color: #c9dcfd;
+.winter {
+  background-color: #accbff;
 }

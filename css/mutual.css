@@ -258,6 +258,12 @@ footer .info {
   display: flex;
   gap: 8px;
 }
+
+.info i {
+  display: flex;
+  align-self: center;
+}
+
 /*footer socialmedia ikoner layout*/
 .ikoner {
   display: flex;
