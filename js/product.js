@@ -4,6 +4,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 
 window.addEventListener("DOMContentLoaded", getSvampe);
+
 //fetch id
 function getSvampe() {
   const selectUrl = `https://mymxopdswecfhtqjjdaj.supabase.co/rest/v1/Svampe?id=eq.${id}`;
@@ -21,15 +22,19 @@ function getSvampe() {
 //kalder på data
 function showSvamp(svampe) {
   console.log(svampe);
+
+  // Ændring af indhold
   document.querySelector(".svampe_name").textContent = svampe.name;
   document.querySelector(".answer_picking").textContent = svampe.picking;
   document.querySelector(".answer_spot").textContent = svampe.spot;
   document.querySelector(".skov_name").textContent = svampe.place;
   document.querySelector(".skov_name_2").textContent = svampe.place_2;
   document.querySelector(".description").textContent = svampe.description;
+
   // Update the image source and alt attributes
   document.querySelector(".svampe").src = svampe.svampe_img;
   document.querySelector(".svampe").alt = svampe.name;
+
   // Assuming skov_img and skov_img_2 are properties of svampe
   document.querySelector(".skov_img_1").src = svampe.skov_img;
   document.querySelector(".skov_img_1").alt = svampe.place;
@@ -63,4 +68,8 @@ function showSvamp(svampe) {
   }
 }
 
-getSvampe();
+// Menu links
+document.querySelector(".spring_link2").href = `productlist.html?season=Spring`;
+document.querySelector(".summer_link2").href = `productlist.html?season=Summer`;
+document.querySelector(".autumn_link2").href = `productlist.html?season=Autumn`;
+document.querySelector(".winter_link2").href = `productlist.html?season=Winter`;

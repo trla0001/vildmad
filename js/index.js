@@ -1,30 +1,30 @@
 const url = "https://mymxopdswecfhtqjjdaj.supabase.co";
 const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im15bXhvcGRzd2VjZmh0cWpqZGFqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc4MTc1NzksImV4cCI6MjAyMzM5MzU3OX0.7qo3PlF20tNiwd1eHKnvFFIqGTxqqFUHABvXwE-T_fc";
 
-fetch(url + "/rest/v1/Svampe?select=season", {
-  method: "GET",
-  headers: {
-    apikey: key,
-  },
-})
-  .then((res) => res.json())
-  .then(showProducts);
+window.addEventListener("DOMContentLoaded", getSvampe);
 
-function showProducts(products) {
-  console.log(products);
-  //looper og kalder showProducts
-  products.forEach(showProduct);
-}
-function showProduct(product) {
-  // fanger vores template
-  const template = document.querySelector("template").content;
+function getSvampe() {
+  fetch(url + `/rest/v1/Svampe?select=*`, {
+    method: "GET",
+    headers: {
+      apikey: key,
+    },
+  })
+    .then((res) => res.json())
+    .then(showProducts);
 
-  //cloner
-  const clone = template.cloneNode(true);
+  function showProducts(products) {
+    console.log(products);
 
-  // ændrer indhold
-  clone.querySelector(".season_icons a").href = url + `/rest/v1/Svampe?select=season${product.category}`;
+    // Link
+    document.querySelector(".spring_link").href = `productlist.html?season=Spring`;
+    document.querySelector(".summer_link").href = `productlist.html?season=Summer`;
+    document.querySelector(".autumn_link").href = `productlist.html?season=Autumn`;
+    document.querySelector(".winter_link").href = `productlist.html?season=Winter`;
 
-  //appende
-  document.querySelector(".gallery").appendChild(copy);
+    document.querySelector(".spring_link2").href = `productlist.html?season=Spring`;
+    document.querySelector(".summer_link2").href = `productlist.html?season=Summer`;
+    document.querySelector(".autumn_link2").href = `productlist.html?season=Autumn`;
+    document.querySelector(".winter_link2").href = `productlist.html?season=Winter`;
+  }
 }
