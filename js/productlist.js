@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", getSvampe);
 
 function getSvampe() {
   console.log("season", season);
-  fetch(url + `/rest/v1/Svampe?season=ilike.${season}`, {
+  fetch(url + `/rest/v1/Svampe?season=ilike.*${season}*`, {
     method: "GET",
     headers: {
       apikey: key,
