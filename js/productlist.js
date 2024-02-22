@@ -36,7 +36,7 @@ function getSvampe() {
     copy.querySelector(".mushroom_name").textContent = product.name;
 
     // Link
-    copy.querySelector(".mushroom_link").href = `/product.html?id=${product.id}`;
+    copy.querySelector(".mushroom_link").href = `product.html?id=${product.id}`;
 
     // Fjern alle tidligere sæsonklasser
     copy.querySelector(".mushroom_article").classList.remove("spring", "summer", "autumn", "winter");
